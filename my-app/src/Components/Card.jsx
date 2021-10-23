@@ -1,12 +1,25 @@
 import React from 'react'
 import { Card } from 'semantic-ui-react'
 
-const CardExampleLinkCard = (props) => (
-  <Card
-    href={props.link}
-    header={props.heading}
-    description={props.description}
-  />
+
+const CardExampleImageCard = (props) => (
+  <Card href={props.link}  style={{borderRadius:" 10% 10% 10% 10% !important"}} className="cardBoarder">
+    {/* <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} /> */}
+    
+  <Card.Content style={{borderRadius:" 10% 10% 0 0 !important"}} className="cardTop">
+      {/* <Card.Header>{props.heading}</Card.Header> */}
+     
+      <Card.Description className="cardDescriptionFont">
+        {props.description}{props.level}
+      </Card.Description>
+    </Card.Content>
+  
+
+    <Card.Content extra className="cardBottom">
+     
+        <Card.Meta>Level {props.level}</Card.Meta> 
+    </Card.Content>
+  </Card>
 )
 
-export default CardExampleLinkCard
+export default CardExampleImageCard;
