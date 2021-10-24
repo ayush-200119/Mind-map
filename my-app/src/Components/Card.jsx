@@ -9,7 +9,7 @@ const CardExampleImageCard = (props) => (
   <Card.Content style={{borderRadius:" 10% 10% 0 0 !important"}} className="cardTop">
       {/* <Card.Header>{props.heading}</Card.Header> */}
      
-      <Card.Description className="cardDescriptionFont">
+      <Card.Description className="cardDescriptionFont" style={{color:"#18848a"}}>
         {props.description}{props.level}
       </Card.Description>
     </Card.Content>
@@ -17,7 +17,7 @@ const CardExampleImageCard = (props) => (
 
     <Card.Content extra className="cardBottom">
      
-        <Card.Meta>Level {props.level}</Card.Meta> 
+        <Card.Meta style={{color:"#18848a"}}>Level {props.level}</Card.Meta> 
     </Card.Content>
   </Card>
 )

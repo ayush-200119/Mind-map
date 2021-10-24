@@ -4,7 +4,7 @@ import LikeButton from "./LikeButton";
 
 const HeaderExamplePage = (props) => (
   <div className="TrackHead">
-    <Header className="TrackName" style={{ marginLeft:"5%",marginTop:"1%",marginBottom:"5%",letterSpacing:"2px"}} as='h1'>{props.heading}
+    <Header className="TrackName" style={{ marginLeft:"5%",marginTop:"1%",marginBottom:"5%",letterSpacing:"2px",color:"#143e41"}} as='h1'>{props.heading}
     
     </Header>
     <LikeButton />
